@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .table1 {
+            margin: auto;
+            border-spacing: 10px;
+            height: auto;
+            width: auto;
+        }
+        body{
+            background-color:#a8e6cf;
+            color:black;
+        }
+        .container{
+            border-radius: 25px;
+            margin: 100px;
+            margin-left: 650px;
+            width:600px;
+            transition-property:background-color;
+            transition-duration:600ms;
+        }
+        input{
+            border-radius: 10px;
+        }
+        .submit{
+            background-color: green;
+            color:white;
+            height: 30px;
+            width: 70px;
+        }
+        .reset{
+            background-color: red;
+            color:white;
+            height: 30px;
+            width: 70px;
+        }
+        .submit:hover{
+            background-color:lightgreen;
+            color:black;
+        }
+        .reset:hover{
+            background-color:rgb(255, 68, 68);
+            color:black;
+        }
+       .container:hover{
+        background-color:black;
+        color:white;
+        transition-delay: 50ms;
+        
+       }
+    </style>
+</head>
+<body>
+    
+        <form action="" class="form">
+            <div class="container">
+            <h1>Student Registration Form</h1>
+            <table class="table1">
+            <tr>
+           
+                <td>
+                <label for="fname">First Name:  </label>
+                </td>
+                <td>
+                <input type="text" name="fname" class="fname" placeholder="Enter First Name" required>
+                </td>
+          </tr>
+          <tr>
+               <td>
+                <label for="fname">Last Name:  </label>
+                </td>
+                <td>
+                <input type="text" name="lname" class="lname" placeholder="Enter Last Name" required>
+                </td>
+        </tr>
+        <tr>
+                <td>
+                <label for="age">Age:</label>
+                </td>
+                <td>
+                <input type="number" name="age" placeholder="Enter Your Age" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" placeholder="Enter Email " required></td>
+        </tr>
+        <tr>
+            <td>Mobile:</td>
+            <td><input type="tel" placeholder="Enter Mobile Number" required></td>
+        </tr>
+        <tr>
+            <td>DOB:</td>
+            <td>
+                <input type="date";>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Course:
+            </td>
+            <td>
+                <select name="" id="">
+                    <option value="">Select</option>
+                    <option value="Select">
+                        Java
+                    </option>
+                    <option value="">Python</option>
+                    <option value="">C++</option>
+                    <option value="">Javascript</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <div class="gender">
+                <td>Gender:</td>
+                <td>
+                <input type="radio" name="gender">
+                <label for="male">Male</label>
+                 <input type="radio" name="gender">
+                <label for="female">Female</label>
+                <input type="radio" name="gender">
+                <label for="female">Others</label>
+               
+</td>
+            </div>
+            </tr>
+            <tr>
+                <td>
+                Set Username:</td>
+                <td><input type="text" placeholder="Enter Username"></td>
+            </tr>
+            <tr>
+                <td>Set Password:</td>
+                <td><input type="password" placeholder="Enter Password"></td>
+            </tr>
+            <tr>
+                <td>
+                    Confirm Password:
+                </td>
+                <td><input type="password" placeholder="Re-enter password"></td>
+            </tr>
+            <tr>
+                <td>
+                    Upload Photo:
+                </td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Register" class="submit"></td>
+                <td><input type="reset" class="reset"></td>
+                
+            </tr>
+
+        </table>
+        </div>
+        </form>
+</body>
+</html>
